@@ -10,3 +10,5 @@ services:
       - ${SWAGGER_YAML}:/swagger.yml
     environment:
       SWAGGER_JSON: /swagger.yml
+      DEFAULT_MODELS_EXPAND_DEPTH: ${DEFAULT_MODELS_EXPAND_DEPTH:-10}
+      DEFAULT_MODEL_EXPAND_DEPTH: ${DEFAULT_MODEL_EXPAND_DEPTH:-10}
